@@ -1,0 +1,96 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .joinOuter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #1A1A1D;
+  }
+  
+  .joinInner {
+    width: 20%;
+  }
+
+  .joinInner input {
+    padding: 10px 100px 10px 10px;
+    border-radius: 6px;
+  }
+  
+  .joinInput {
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 100%;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
+  
+  .button {
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #2979FF;
+      padding: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      width: 100%;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .joinInner input {
+      padding: 10px 0px 10px 10px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .joinInner {
+      width: 35%;
+    }
+
+    .joinInner input {
+      padding: 10px 63px 10px 10px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .joinOuter {
+      height: 100%;
+    }
+  
+    .joinInner {
+      width: 90%;
+    }
+
+    .joinInner input {
+      width: 100%;
+    }
+  
+  
+  }
+  
+  button:focus {
+    outline: 0;
+  }  
